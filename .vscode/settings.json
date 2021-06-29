@@ -8,6 +8,15 @@
                 "wholeMatch": false
             },
             "color": "darkgoldenrod"
+        },
+        {
+            "pattern": {
+                "type": "string",
+                "expression": "\"contact\": {\n          \"$id\": \"#/properties/dmp/properties/contact\",\n          \"type\": \"object\",\n          \"title\": \"The DMP Contact Schema\",\n          \"properties\": {\n            \"contact_id\": {\n              \"$id\": \"#/properties/dmp/properties/contact/properties/contact_id\",\n              \"type\": \"object\",\n              \"title\": \"The Contact ID Schema\",\n              \"properties\": {\n                \"identifier\": {\n                  \"$id\": \"#/properties/dmp/properties/contact/properties/contact_id/properties/identifier\",\n                  \"type\": \"string\",\n                  \"title\": \"The DMP Contact Identifier Schema\",\n                  \"examples\": [\"https://orcid.org/0000-0003-0644-4174\"]\n                },\n                \"type\": {\n                  \"$id\": \"#/properties/dmp/properties/contact/properties/contact_id/properties/type\",\n                  \"type\": \"string\",\n                  \"enum\": [\n                    \"orcid\",\n                    \"isni\",\n                    \"openid\",\n                    \"other\"\n                  ],\n                  \"title\": \"The DMP Contact Identifier Type Schema\",\n                  \"description\": \"Identifier type. Allowed values: orcid, isni, openid, other\",\n                  \"examples\": [\"orcid\"]\n                }\n              },\n              \"required\": [\n                \"identifier\",\n                \"type\"\n              ]\n            },\n            \"mbox\": {\n              \"$id\": \"#/properties/dmp/properties/contact/properties/mbox\",\n              \"type\": \"string\",\n              \"format\": \"email\",\n              \"title\": \"The Mailbox Schema\",\n              \"description\": \"Contact Person's E-mail address\",\n              \"examples\": [\"cc@example.com\"]\n            },\n            \"name\": {\n              \"$id\": \"#/properties/dmp/properties/contact/properties/name\",\n              \"type\": \"string\",\n              \"title\": \"The Name Schema\",\n              \"description\": \"Name of the contact person\",\n              \"examples\": [\"Charlie Chaplin\"]\n            }\n          },\n          \"required\": [\n            \"contact_id\",\n            \"mbox\",\n            \"name\"\n          ]\n        }",
+                "ignoreCase": false,
+                "wholeMatch": false
+            },
+            "color": "darkmagenta"
         }
     ]
 }

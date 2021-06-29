@@ -22,11 +22,57 @@
 
 ex:DMPShape
     a sh:NodeShape;
+    sh:name "The DMP Schema";
     sh:targetClass madmp:DMP;
     sh:property [
         sh:path terms:title;
+        sh:name "The DMP Title Schema";
         sh:description "Title of a DMP";
         sh:minCount 1;
         sh:maxCount 1;
         sh:datatype xsd:string;
-    ] .
+    ];
+    sh:property [
+        sh:path madmp:contact;
+        sh:name "The DMP Contact Schema";
+        sh:minCount 1;
+        sh:maxCount 1;
+        sh:property [
+            sh:path madmp:contact_id;
+            sh:name "The Contact ID Schema";
+            sh:minCount 1;
+            sh:maxCount 1;
+            sh:property [
+                sh:path terms:identifier;
+                sh:name "The DMP Contact Identifier Schema";
+                sh:minCount 1;
+                sh:maxCount 1;
+                sh:datatype xsd:string;
+            ];
+            sh:property [
+                sh:path madmp:identifier_type;
+                sh:name "The DMP Contact Identifier Type Schema";
+                sh:description "Identifier type. Allowed values: orcid, isni, openid, other";
+                sh:minCount 1;
+                sh:maxCount 1;
+                sh:in ("orcid"^^xsd:string "isni"^^xsd:string "openid"^^xsd:string "other"^^xsd:string);
+            ];
+        ];
+        sh:property [
+            sh:path foaf:mbox;
+            sh:name "The Mailbox Schema";
+            sh:description "Contact Person's E-mail address";
+            sh:minCount 1;
+            sh:maxCount 1;
+            sh:pattern "^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$"
+        ];
+        sh:property [
+            sh:path foaf:name;
+            sh:name "The Name Schema";
+            sh:description "Name of the contact person";
+            sh:minCount 1;
+            sh:maxCount 1;
+            sh:datatype xsd:string;
+        ];
+
+    ].
