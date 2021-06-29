@@ -1,0 +1,61 @@
+@prefix :      <https://w3id.org/madmp/terms#> .
+@prefix schema: <http://schema.org/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix ns:    <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix dcam:  <http://purl.org/dc/dcam/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcsx:  <https://w3id.org/dcso/ns/extension#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ex:    <https://w3id.org/dcso/id/example/> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix wot:   <http://xmlns.com/wot/0.1/> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix madmp: <https://w3id.org/madmp/terms#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ rdf:type                    madmp:DMP ;
+  terms:created               "2018-07-23T10:10:23.6" ;
+  terms:description           "DMP with super secret and sensitive data that cannot be shared" ;
+  terms:modified              "2019-02-22T15:10:56.9" ;
+  terms:title                 "Super secret data DMP" ;
+  madmp:contact               [ foaf:mbox         "TMiksa@sba-research.org" ;
+                                foaf:name         "Tomasz Miksa" ;
+                                madmp:contact_id  [ terms:identifier       "https://orcid.org/0000-0000-0000-0000" ;
+                                                    madmp:identifier_type  "orcid"
+                                                  ]
+                              ] ;
+  madmp:dataset               [ terms:description             "Audio recordings of interviews" ;
+                                terms:title                   "Interviews" ;
+                                madmp:data_quality_assurance  "File naming conventions used to..." ;
+                                madmp:dataset_id              [ terms:identifier       "10.5281/zenodo.1200361" ;
+                                                                madmp:identifier_type  "doi"
+                                                              ] ;
+                                madmp:distribution            [ terms:description      "All interviews with people from..." ;
+                                                                terms:format           "audio/mpeg3" ;
+                                                                terms:title            "Collection of recordings" ;
+                                                                dcat:byteSize          6934576883 ;
+                                                                madmp:available_until  "2029-01-30" ;
+                                                                madmp:data_access      "closed"
+                                                              ] ;
+                                madmp:identifier_type         "audio" ;
+                                madmp:personal_data           "yes" ;
+                                madmp:security_and_privacy    [ terms:description  "Data cannot be shared even in an anonymised form, ..." ;
+                                                                terms:title        "Privacy requirement"
+                                                              ] ;
+                                madmp:security_and_privacy    [ terms:description  "Data must be kept in a locked room, because..." ;
+                                                                terms:title        "Special security requirement"
+                                                              ] ;
+                                madmp:sensitive_data          "yes"
+                              ] ;
+  madmp:dmp_id                [ terms:identifier       "https://doi.org/10.0000/00.0.1234" ;
+                                madmp:identifier_type  "doi"
+                              ] ;
+  madmp:ethical_issues_exist  "no" ;
+  madmp:language              "eng"
+] .

@@ -1,0 +1,58 @@
+@prefix :      <https://w3id.org/madmp/terms#> .
+@prefix schema: <http://schema.org/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix ns:    <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix dcam:  <http://purl.org/dc/dcam/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcsx:  <https://w3id.org/dcso/ns/extension#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ex:    <https://w3id.org/dcso/id/example/> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix wot:   <http://xmlns.com/wot/0.1/> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix madmp: <https://w3id.org/madmp/terms#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ rdf:type                    madmp:DMP ;
+  terms:created               "2018-07-23T10:10:23.6" ;
+  terms:description           "Project has ended. Data is published." ;
+  terms:modified              "2019-02-22T15:10:56.9" ;
+  terms:title                 "DMP for a finished project" ;
+  madmp:contact               [ foaf:mbox         "TMiksa@sba-research.org" ;
+                                foaf:name         "Tomasz Miksa" ;
+                                madmp:contact_id  [ terms:identifier       "https://orcid.org/0000-0000-0000-0000" ;
+                                                    madmp:identifier_type  "orcid"
+                                                  ]
+                              ] ;
+  madmp:dataset               [ terms:description             "Proof of concept implementation" ;
+                                terms:issued                  "2019-01-30" ;
+                                terms:title                   "Source Code" ;
+                                madmp:data_quality_assurance  "The code has been reviewed by... and follows naming convention..." ;
+                                madmp:dataset_id              [ terms:identifier       "10.5281/zenodo.1200361" ;
+                                                                madmp:identifier_type  "doi"
+                                                              ] ;
+                                madmp:distribution            [ terms:description      "Final realase implemented using... to..." ;
+                                                                terms:title            "Java code" ;
+                                                                dcat:accessUrl         "http://github.com/some-repo..." ;
+                                                                madmp:available_until  "2029-01-30" ;
+                                                                madmp:data_access      "open" ;
+                                                                madmp:license          [ madmp:license_ref  "https://creativecommons.org/licenses/by/4.0/" ;
+                                                                                         madmp:start_date   "2019-01-30"
+                                                                                       ]
+                                                              ] ;
+                                madmp:identifier_type         "software" ;
+                                madmp:personal_data           "no" ;
+                                madmp:sensitive_data          "no"
+                              ] ;
+  madmp:dmp_id                [ terms:identifier       "https://doi.org/10.0000/00.0.1234" ;
+                                madmp:identifier_type  "doi"
+                              ] ;
+  madmp:ethical_issues_exist  "no" ;
+  madmp:language              "eng"
+] .
