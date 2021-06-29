@@ -1,0 +1,13 @@
+{
+    "textmarker.savedHighlights": [
+        {
+            "pattern": {
+                "type": "string",
+                "expression": "\"required\": [\n        \"contact\",\n        \"created\",\n        \"dataset\",\n        \"dmp_id\",\n        \"ethical_issues_exist\",\n        \"language\",\n        \"modified\",\n        \"title\"\n      ]",
+                "ignoreCase": false,
+                "wholeMatch": false
+            },
+            "color": "darkgoldenrod"
+        }
+    ]
+}
