@@ -19,6 +19,7 @@
 @prefix prov:  <http://www.w3.org/ns/prov#> .
 @prefix madmp: <https://w3id.org/madmp/terms#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix dash: <http://datashapes.org/dash#> .
 
 ex:DMPShape
     a sh:NodeShape;
@@ -75,4 +76,83 @@ ex:DMPShape
             sh:datatype xsd:string;
         ];
 
+    ];
+    sh:property [
+        sh:path madmp:contributor;
+        sh:name "The Contributor Schema";
+        sh:property [
+            sh:path madmp:contributor_id;
+            sh:name "The Contributor_id Schema";
+            sh:minCount 1;
+            sh:maxCount 1;
+            sh:property [
+                sh:path terms:identifier;
+                sh:name "The Contributor Identifier Schema";
+                sh:description "Identifier for a contact person";
+                sh:minCount 1;
+                sh:maxCount 1;
+                sh:datatype xsd:string;
+            ];
+            sh:property [
+                sh:path madmp:identifier_type;
+                sh:name "The Contributor Identifier Type Schema";
+                sh:description "Identifier type. Allowed values: orcid, isni, openid, other";
+                sh:minCount 1;
+                sh:maxCount 1;
+                sh:in ("orcid"^^xsd:string "isni"^^xsd:string "openid"^^xsd:string "other"^^xsd:string);
+            ];
+        ];
+        sh:property [
+            sh:path foaf:mbox;
+            sh:name "The Contributor Mailbox Schema";
+            sh:description "Contributor Mail address";
+            sh:maxCount 1;
+            sh:pattern "^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$"
+        ];
+        sh:property [
+            sh:path foaf:name;
+            sh:name "The Name Schema";
+            sh:description "Name of the contributor";
+            sh:minCount 1;
+            sh:maxCount 1;
+            sh:datatype xsd:string;
+        ];
+        sh:property [
+            sh:path madmp:role;
+            sh:name "The Role Schema";
+            sh:description "Type of contributor";
+            sh:node dash:ListShape;
+            sh:minCount 1 ;
+            sh:property [
+                sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
+                sh:datatype xsd:string ;
+                sh:minCount 1 ;
+            ]
+        ];
+        sh:sparql [
+            sh:message "Contributor {?name} has role {?role} more than once ({?roleCount} times).";
+            sh:prefixes (madmp: rdf: foaf:);
+            sh:select """
+            PREFIX madmp: <https://w3id.org/madmp/terms#>
+            PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+            prefix foaf:  <http://xmlns.com/foaf/0.1/>
+
+            SELECT $this ?role ?name (COUNT(?role) AS ?roleCount)
+            WHERE {
+                $this $PATH ?contributor.
+                ?contributor madmp:role/rdf:rest*/rdf:first ?role;
+                foaf:name ?name
+            }
+            GROUP BY $this ?name ?role
+            HAVING (?roleCount > 1)
+            """
+        ]
+    ];
+    sh:property [
+        sh:path terms:title;
+        sh:name "The DMP Title Schema";
+        sh:description "Title of a DMP";
+        sh:minCount 1;
+        sh:maxCount 1;
+        sh:datatype xsd:string;
     ].
