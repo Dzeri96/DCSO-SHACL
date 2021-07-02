@@ -13,3 +13,4 @@
 # Errors we found in the original JSON Schema or Repository
 - The `storage_type` example is missing in the RDA-DMP-Common README File
 - The `url` property in `host` has the wrong title. (JSON Schema 1.1)
+- The `preservation_statement` field is not present in `madmp-1.1.0.jsonld` context file, so this field won't get translated .
