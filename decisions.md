@@ -9,6 +9,9 @@
 - The `uniqueItems` construct is enforced by a somewhat convoluted SPARQL constraint, though it allows us to produce a nice error message.
 - Even though the `description` property shows up twice in very similar forms in datasets and their distributions, we explicitly wrote it twice instead of handling it separately, since the rest of the schema follows this spirit.
 - For validating a URI, we used a fairly permissive custom regex. A URI can get very complex and it should be discussed how strict we want the validation to be.
+- For the cost value, we decided to include both `xsd:integer` and `xsd:float` as those should correspond to the `number` JSON-Schema type. We also decided to further restrict the minimum value to 0.
+- When validating the date or date-time fields, we allow for semantically incorrect dates like the 31st of February. This was done to keep the regular expression somewhat simple.
+
 
 # Errors we found in the original JSON Schema or Repository
 - The `storage_type` example is missing in the RDA-DMP-Common README File
