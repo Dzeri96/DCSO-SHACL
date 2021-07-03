@@ -386,7 +386,27 @@ ex:DMPShape
             sh:name "The Dataset Language Schema";
             sh:description "Language of the dataset expressed using ISO 639-3.";
             sh:datatype xsd:string;
-            sh:in ("aar"^^xsd:string "abk"^^xsd:string "afr"^^xsd:string "aka"^^xsd:string "amh"^^xsd:string "ara"^^xsd:string "arg"^^xsd:string "asm"^^xsd:string "ava"^^xsd:string "ave"^^xsd:string "aym"^^xsd:string "aze"^^xsd:string "bak"^^xsd:string "bam"^^xsd:string "bel"^^xsd:string "ben"^^xsd:string "bih"^^xsd:string "bis"^^xsd:string "bod"^^xsd:string "bos"^^xsd:string "bre"^^xsd:string "bul"^^xsd:string "cat"^^xsd:string "ces"^^xsd:string "cha"^^xsd:string "che"^^xsd:string "chu"^^xsd:string "chv"^^xsd:string "cor"^^xsd:string "cos"^^xsd:string "cre"^^xsd:string "cym"^^xsd:string "dan"^^xsd:string "deu"^^xsd:string "div"^^xsd:string "dzo"^^xsd:string "ell"^^xsd:string "eng"^^xsd:string "epo"^^xsd:string "est"^^xsd:string "eus"^^xsd:string "ewe"^^xsd:string "fao"^^xsd:string "fas"^^xsd:string "fij"^^xsd:string "fin"^^xsd:string "fra"^^xsd:string "fry"^^xsd:string "ful"^^xsd:string "gla"^^xsd:string "gle"^^xsd:string "glg"^^xsd:string "glv"^^xsd:string "grn"^^xsd:string "guj"^^xsd:string "hat"^^xsd:string "hau"^^xsd:string "hbs"^^xsd:string "heb"^^xsd:string "her"^^xsd:string "hin"^^xsd:string "hmo"^^xsd:string "hrv"^^xsd:string "hun"^^xsd:string "hye"^^xsd:string "ibo"^^xsd:string "ido"^^xsd:string "iii"^^xsd:string "iku"^^xsd:string "ile"^^xsd:string "ina"^^xsd:string "ind"^^xsd:string "ipk"^^xsd:string "isl"^^xsd:string "ita"^^xsd:string "jav"^^xsd:string "jpn"^^xsd:string "kal"^^xsd:string "kan"^^xsd:string "kas"^^xsd:string "kat"^^xsd:string "kau"^^xsd:string "kaz"^^xsd:string "khm"^^xsd:string "kik"^^xsd:string "kin"^^xsd:string "kir"^^xsd:string "kom"^^xsd:string "kon"^^xsd:string "kor"^^xsd:string "kua"^^xsd:string "kur"^^xsd:string "lao"^^xsd:string "lat"^^xsd:string "lav"^^xsd:string "lim"^^xsd:string "lin"^^xsd:string "lit"^^xsd:string "ltz"^^xsd:string "lub"^^xsd:string "lug"^^xsd:string "mah"^^xsd:string "mal"^^xsd:string "mar"^^xsd:string "mkd"^^xsd:string "mlg"^^xsd:string "mlt"^^xsd:string "mon"^^xsd:string "mri"^^xsd:string "msa"^^xsd:string "mya"^^xsd:string "nau"^^xsd:string "nav"^^xsd:string "nbl"^^xsd:string "nde"^^xsd:string "ndo"^^xsd:string "nep"^^xsd:string "nld"^^xsd:string "nno"^^xsd:string "nob"^^xsd:string "nor"^^xsd:string "nya"^^xsd:string "oci"^^xsd:string "oji"^^xsd:string "ori"^^xsd:string "orm"^^xsd:string "oss"^^xsd:string "pan"^^xsd:string "pli"^^xsd:string "pol"^^xsd:string "por"^^xsd:string "pus"^^xsd:string "que"^^xsd:string "roh"^^xsd:string "ron"^^xsd:string "run"^^xsd:string "rus"^^xsd:string "sag"^^xsd:string "san"^^xsd:string "sin"^^xsd:string "slk"^^xsd:string "slv"^^xsd:string "sme"^^xsd:string "smo"^^xsd:string "sna"^^xsd:string "snd"^^xsd:string "som"^^xsd:string "sot"^^xsd:string "spa"^^xsd:string "sqi"^^xsd:string "srd"^^xsd:string "srp"^^xsd:string "ssw"^^xsd:string "sun"^^xsd:string "swa"^^xsd:string "swe"^^xsd:string "tah"^^xsd:string "tam"^^xsd:string "tat"^^xsd:string "tel"^^xsd:string "tgk"^^xsd:string "tgl"^^xsd:string "tha"^^xsd:string "tir"^^xsd:string "ton"^^xsd:string "tsn"^^xsd:string "tso"^^xsd:string "tuk"^^xsd:string "tur"^^xsd:string "twi"^^xsd:string "uig"^^xsd:string "ukr"^^xsd:string "urd"^^xsd:string "uzb"^^xsd:string "ven"^^xsd:string "vie"^^xsd:string "vol"^^xsd:string "wln"^^xsd:string "wol"^^xsd:string "xho"^^xsd:string "yid"^^xsd:string "yor"^^xsd:string "zha"^^xsd:string "zho"^^xsd:string "zul"^^xsd:string)
+            sh:in (
+                "aar"^^xsd:string "abk"^^xsd:string "afr"^^xsd:string "aka"^^xsd:string "amh"^^xsd:string "ara"^^xsd:string "arg"^^xsd:string "asm"^^xsd:string "ava"^^xsd:string "ave"^^xsd:string
+                "aym"^^xsd:string "aze"^^xsd:string "bak"^^xsd:string "bam"^^xsd:string "bel"^^xsd:string "ben"^^xsd:string "bih"^^xsd:string "bis"^^xsd:string "bod"^^xsd:string "bos"^^xsd:string
+                "bre"^^xsd:string "bul"^^xsd:string "cat"^^xsd:string "ces"^^xsd:string "cha"^^xsd:string "che"^^xsd:string "chu"^^xsd:string "chv"^^xsd:string "cor"^^xsd:string "cos"^^xsd:string
+                "cre"^^xsd:string "cym"^^xsd:string "dan"^^xsd:string "deu"^^xsd:string "div"^^xsd:string "dzo"^^xsd:string "ell"^^xsd:string "eng"^^xsd:string "epo"^^xsd:string "est"^^xsd:string
+                "eus"^^xsd:string "ewe"^^xsd:string "fao"^^xsd:string "fas"^^xsd:string "fij"^^xsd:string "fin"^^xsd:string "fra"^^xsd:string "fry"^^xsd:string "ful"^^xsd:string "gla"^^xsd:string
+                "gle"^^xsd:string "glg"^^xsd:string "glv"^^xsd:string "grn"^^xsd:string "guj"^^xsd:string "hat"^^xsd:string "hau"^^xsd:string "hbs"^^xsd:string "heb"^^xsd:string "her"^^xsd:string
+                "hin"^^xsd:string "hmo"^^xsd:string "hrv"^^xsd:string "hun"^^xsd:string "hye"^^xsd:string "ibo"^^xsd:string "ido"^^xsd:string "iii"^^xsd:string "iku"^^xsd:string "ile"^^xsd:string
+                "ina"^^xsd:string "ind"^^xsd:string "ipk"^^xsd:string "isl"^^xsd:string "ita"^^xsd:string "jav"^^xsd:string "jpn"^^xsd:string "kal"^^xsd:string "kan"^^xsd:string "kas"^^xsd:string
+                "kat"^^xsd:string "kau"^^xsd:string "kaz"^^xsd:string "khm"^^xsd:string "kik"^^xsd:string "kin"^^xsd:string "kir"^^xsd:string "kom"^^xsd:string "kon"^^xsd:string "kor"^^xsd:string
+                "kua"^^xsd:string "kur"^^xsd:string "lao"^^xsd:string "lat"^^xsd:string "lav"^^xsd:string "lim"^^xsd:string "lin"^^xsd:string "lit"^^xsd:string "ltz"^^xsd:string "lub"^^xsd:string
+                "lug"^^xsd:string "mah"^^xsd:string "mal"^^xsd:string "mar"^^xsd:string "mkd"^^xsd:string "mlg"^^xsd:string "mlt"^^xsd:string "mon"^^xsd:string "mri"^^xsd:string "msa"^^xsd:string
+                "mya"^^xsd:string "nau"^^xsd:string "nav"^^xsd:string "nbl"^^xsd:string "nde"^^xsd:string "ndo"^^xsd:string "nep"^^xsd:string "nld"^^xsd:string "nno"^^xsd:string "nob"^^xsd:string
+                "nor"^^xsd:string "nya"^^xsd:string "oci"^^xsd:string "oji"^^xsd:string "ori"^^xsd:string "orm"^^xsd:string "oss"^^xsd:string "pan"^^xsd:string "pli"^^xsd:string "pol"^^xsd:string
+                "por"^^xsd:string "pus"^^xsd:string "que"^^xsd:string "roh"^^xsd:string "ron"^^xsd:string "run"^^xsd:string "rus"^^xsd:string "sag"^^xsd:string "san"^^xsd:string "sin"^^xsd:string
+                "slk"^^xsd:string "slv"^^xsd:string "sme"^^xsd:string "smo"^^xsd:string "sna"^^xsd:string "snd"^^xsd:string "som"^^xsd:string "sot"^^xsd:string "spa"^^xsd:string "sqi"^^xsd:string
+                "srd"^^xsd:string "srp"^^xsd:string "ssw"^^xsd:string "sun"^^xsd:string "swa"^^xsd:string "swe"^^xsd:string "tah"^^xsd:string "tam"^^xsd:string "tat"^^xsd:string "tel"^^xsd:string
+                "tgk"^^xsd:string "tgl"^^xsd:string "tha"^^xsd:string "tir"^^xsd:string "ton"^^xsd:string "tsn"^^xsd:string "tso"^^xsd:string "tuk"^^xsd:string "tur"^^xsd:string "twi"^^xsd:string
+                "uig"^^xsd:string "ukr"^^xsd:string "urd"^^xsd:string "uzb"^^xsd:string "ven"^^xsd:string "vie"^^xsd:string "vol"^^xsd:string "wln"^^xsd:string "wol"^^xsd:string "xho"^^xsd:string
+                "yid"^^xsd:string "yor"^^xsd:string "zha"^^xsd:string "zho"^^xsd:string "zul"^^xsd:string
+            );
         ];
         sh:property [
             sh:path madmp:personal_data;
@@ -486,16 +506,27 @@ ex:DMPShape
                 sh:description "Language of the metadata expressed using ISO 639-3.";
                 sh:minCount 1;
                 sh:maxCount 1;
-                sh:in ("aar"^^xsd:string "abk"^^xsd:string "afr"^^xsd:string "aka"^^xsd:string "amh"^^xsd:string "ara"^^xsd:string "arg"^^xsd:string "asm"^^xsd:string "ava"^^xsd:string "ave"^^xsd:string "aym"^^xsd:string "aze"^^xsd:string "bak"^^xsd:string "bam"^^xsd:string "bel"^^xsd:string "ben"^^xsd:string "bih"^^xsd:string "bis"^^xsd:string "bod"^^xsd:string "bos"^^xsd:string
-            "bre"^^xsd:string "bul"^^xsd:string "cat"^^xsd:string "ces"^^xsd:string "cha"^^xsd:string "che"^^xsd:string "chu"^^xsd:string "chv"^^xsd:string "cor"^^xsd:string "cos"^^xsd:string "cre"^^xsd:string "cym"^^xsd:string "dan"^^xsd:string "deu"^^xsd:string "div"^^xsd:string "dzo"^^xsd:string "ell"^^xsd:string "eng"^^xsd:string "epo"^^xsd:string "est"^^xsd:string
-            "eus"^^xsd:string "ewe"^^xsd:string "fao"^^xsd:string "fas"^^xsd:string "fij"^^xsd:string "fin"^^xsd:string "fra"^^xsd:string "fry"^^xsd:string "ful"^^xsd:string "gla"^^xsd:string "gle"^^xsd:string "glg"^^xsd:string "glv"^^xsd:string "grn"^^xsd:string "guj"^^xsd:string "hat"^^xsd:string "hau"^^xsd:string "hbs"^^xsd:string "heb"^^xsd:string "her"^^xsd:string
-            "hin"^^xsd:string "hmo"^^xsd:string "hrv"^^xsd:string "hun"^^xsd:string "hye"^^xsd:string "ibo"^^xsd:string "ido"^^xsd:string "iii"^^xsd:string "iku"^^xsd:string "ile"^^xsd:string "ina"^^xsd:string "ind"^^xsd:string "ipk"^^xsd:string "isl"^^xsd:string "ita"^^xsd:string "jav"^^xsd:string "jpn"^^xsd:string "kal"^^xsd:string "kan"^^xsd:string "kas"^^xsd:string
-            "kat"^^xsd:string "kau"^^xsd:string "kaz"^^xsd:string "khm"^^xsd:string "kik"^^xsd:string "kin"^^xsd:string "kir"^^xsd:string "kom"^^xsd:string "kon"^^xsd:string "kor"^^xsd:string "kua"^^xsd:string "kur"^^xsd:string "lao"^^xsd:string "lat"^^xsd:string "lav"^^xsd:string "lim"^^xsd:string "lin"^^xsd:string "lit"^^xsd:string "ltz"^^xsd:string "lub"^^xsd:string
-            "lug"^^xsd:string "mah"^^xsd:string "mal"^^xsd:string "mar"^^xsd:string "mkd"^^xsd:string "mlg"^^xsd:string "mlt"^^xsd:string "mon"^^xsd:string "mri"^^xsd:string "msa"^^xsd:string "mya"^^xsd:string "nau"^^xsd:string "nav"^^xsd:string "nbl"^^xsd:string "nde"^^xsd:string "ndo"^^xsd:string "nep"^^xsd:string "nld"^^xsd:string "nno"^^xsd:string "nob"^^xsd:string
-            "nor"^^xsd:string "nya"^^xsd:string "oci"^^xsd:string "oji"^^xsd:string "ori"^^xsd:string "orm"^^xsd:string "oss"^^xsd:string "pan"^^xsd:string "pli"^^xsd:string "pol"^^xsd:string "por"^^xsd:string "pus"^^xsd:string "que"^^xsd:string "roh"^^xsd:string "ron"^^xsd:string "run"^^xsd:string "rus"^^xsd:string "sag"^^xsd:string "san"^^xsd:string "sin"^^xsd:string
-            "slk"^^xsd:string "slv"^^xsd:string "sme"^^xsd:string "smo"^^xsd:string "sna"^^xsd:string "snd"^^xsd:string "som"^^xsd:string "sot"^^xsd:string "spa"^^xsd:string "sqi"^^xsd:string "srd"^^xsd:string "srp"^^xsd:string "ssw"^^xsd:string "sun"^^xsd:string "swa"^^xsd:string "swe"^^xsd:string "tah"^^xsd:string "tam"^^xsd:string "tat"^^xsd:string "tel"^^xsd:string
-            "tgk"^^xsd:string "tgl"^^xsd:string "tha"^^xsd:string "tir"^^xsd:string "ton"^^xsd:string "tsn"^^xsd:string "tso"^^xsd:string "tuk"^^xsd:string "tur"^^xsd:string "twi"^^xsd:string "uig"^^xsd:string "ukr"^^xsd:string "urd"^^xsd:string "uzb"^^xsd:string "ven"^^xsd:string "vie"^^xsd:string "vol"^^xsd:string "wln"^^xsd:string "wol"^^xsd:string "xho"^^xsd:string
-            "yid"^^xsd:string "yor"^^xsd:string "zha"^^xsd:string "zho"^^xsd:string "zul"^^xsd:string);
+                sh:in (
+                    "aar"^^xsd:string "abk"^^xsd:string "afr"^^xsd:string "aka"^^xsd:string "amh"^^xsd:string "ara"^^xsd:string "arg"^^xsd:string "asm"^^xsd:string "ava"^^xsd:string "ave"^^xsd:string
+                    "aym"^^xsd:string "aze"^^xsd:string "bak"^^xsd:string "bam"^^xsd:string "bel"^^xsd:string "ben"^^xsd:string "bih"^^xsd:string "bis"^^xsd:string "bod"^^xsd:string "bos"^^xsd:string
+                    "bre"^^xsd:string "bul"^^xsd:string "cat"^^xsd:string "ces"^^xsd:string "cha"^^xsd:string "che"^^xsd:string "chu"^^xsd:string "chv"^^xsd:string "cor"^^xsd:string "cos"^^xsd:string
+                    "cre"^^xsd:string "cym"^^xsd:string "dan"^^xsd:string "deu"^^xsd:string "div"^^xsd:string "dzo"^^xsd:string "ell"^^xsd:string "eng"^^xsd:string "epo"^^xsd:string "est"^^xsd:string
+                    "eus"^^xsd:string "ewe"^^xsd:string "fao"^^xsd:string "fas"^^xsd:string "fij"^^xsd:string "fin"^^xsd:string "fra"^^xsd:string "fry"^^xsd:string "ful"^^xsd:string "gla"^^xsd:string
+                    "gle"^^xsd:string "glg"^^xsd:string "glv"^^xsd:string "grn"^^xsd:string "guj"^^xsd:string "hat"^^xsd:string "hau"^^xsd:string "hbs"^^xsd:string "heb"^^xsd:string "her"^^xsd:string
+                    "hin"^^xsd:string "hmo"^^xsd:string "hrv"^^xsd:string "hun"^^xsd:string "hye"^^xsd:string "ibo"^^xsd:string "ido"^^xsd:string "iii"^^xsd:string "iku"^^xsd:string "ile"^^xsd:string
+                    "ina"^^xsd:string "ind"^^xsd:string "ipk"^^xsd:string "isl"^^xsd:string "ita"^^xsd:string "jav"^^xsd:string "jpn"^^xsd:string "kal"^^xsd:string "kan"^^xsd:string "kas"^^xsd:string
+                    "kat"^^xsd:string "kau"^^xsd:string "kaz"^^xsd:string "khm"^^xsd:string "kik"^^xsd:string "kin"^^xsd:string "kir"^^xsd:string "kom"^^xsd:string "kon"^^xsd:string "kor"^^xsd:string
+                    "kua"^^xsd:string "kur"^^xsd:string "lao"^^xsd:string "lat"^^xsd:string "lav"^^xsd:string "lim"^^xsd:string "lin"^^xsd:string "lit"^^xsd:string "ltz"^^xsd:string "lub"^^xsd:string
+                    "lug"^^xsd:string "mah"^^xsd:string "mal"^^xsd:string "mar"^^xsd:string "mkd"^^xsd:string "mlg"^^xsd:string "mlt"^^xsd:string "mon"^^xsd:string "mri"^^xsd:string "msa"^^xsd:string
+                    "mya"^^xsd:string "nau"^^xsd:string "nav"^^xsd:string "nbl"^^xsd:string "nde"^^xsd:string "ndo"^^xsd:string "nep"^^xsd:string "nld"^^xsd:string "nno"^^xsd:string "nob"^^xsd:string
+                    "nor"^^xsd:string "nya"^^xsd:string "oci"^^xsd:string "oji"^^xsd:string "ori"^^xsd:string "orm"^^xsd:string "oss"^^xsd:string "pan"^^xsd:string "pli"^^xsd:string "pol"^^xsd:string
+                    "por"^^xsd:string "pus"^^xsd:string "que"^^xsd:string "roh"^^xsd:string "ron"^^xsd:string "run"^^xsd:string "rus"^^xsd:string "sag"^^xsd:string "san"^^xsd:string "sin"^^xsd:string
+                    "slk"^^xsd:string "slv"^^xsd:string "sme"^^xsd:string "smo"^^xsd:string "sna"^^xsd:string "snd"^^xsd:string "som"^^xsd:string "sot"^^xsd:string "spa"^^xsd:string "sqi"^^xsd:string
+                    "srd"^^xsd:string "srp"^^xsd:string "ssw"^^xsd:string "sun"^^xsd:string "swa"^^xsd:string "swe"^^xsd:string "tah"^^xsd:string "tam"^^xsd:string "tat"^^xsd:string "tel"^^xsd:string
+                    "tgk"^^xsd:string "tgl"^^xsd:string "tha"^^xsd:string "tir"^^xsd:string "ton"^^xsd:string "tsn"^^xsd:string "tso"^^xsd:string "tuk"^^xsd:string "tur"^^xsd:string "twi"^^xsd:string
+                    "uig"^^xsd:string "ukr"^^xsd:string "urd"^^xsd:string "uzb"^^xsd:string "ven"^^xsd:string "vie"^^xsd:string "vol"^^xsd:string "wln"^^xsd:string "wol"^^xsd:string "xho"^^xsd:string
+                    "yid"^^xsd:string "yor"^^xsd:string "zha"^^xsd:string "zho"^^xsd:string "zul"^^xsd:string
+                );
             ];
             sh:property [
                 sh:path madmp:metadata_standard_id;
@@ -530,23 +561,25 @@ ex:DMPShape
             sh:name "The Cost Currency Code Schema";
             sh:description "Allowed values defined by ISO 4217";
             sh:maxCount 1;
-            sh:in ("AED"^^xsd:string "AFN"^^xsd:string "ALL"^^xsd:string "AMD"^^xsd:string "ANG"^^xsd:string "AOA"^^xsd:string "ARS"^^xsd:string "AUD"^^xsd:string "AWG"^^xsd:string "AZN"^^xsd:string
-                  "BAM"^^xsd:string "BBD"^^xsd:string "BDT"^^xsd:string "BGN"^^xsd:string "BHD"^^xsd:string "BIF"^^xsd:string "BMD"^^xsd:string "BND"^^xsd:string "BOB"^^xsd:string "BRL"^^xsd:string
-                  "BSD"^^xsd:string "BTN"^^xsd:string "BWP"^^xsd:string "BYN"^^xsd:string "BZD"^^xsd:string "CAD"^^xsd:string "CDF"^^xsd:string "CHF"^^xsd:string "CLP"^^xsd:string "CNY"^^xsd:string
-                  "COP"^^xsd:string "CRC"^^xsd:string "CUC"^^xsd:string "CUP"^^xsd:string "CVE"^^xsd:string "CZK"^^xsd:string "DJF"^^xsd:string "DKK"^^xsd:string "DOP"^^xsd:string "DZD"^^xsd:string
-                  "EGP"^^xsd:string "ERN"^^xsd:string "ETB"^^xsd:string "EUR"^^xsd:string "FJD"^^xsd:string "FKP"^^xsd:string "GBP"^^xsd:string "GEL"^^xsd:string "GGP"^^xsd:string "GHS"^^xsd:string
-                  "GIP"^^xsd:string "GMD"^^xsd:string "GNF"^^xsd:string "GTQ"^^xsd:string "GYD"^^xsd:string "HKD"^^xsd:string "HNL"^^xsd:string "HRK"^^xsd:string "HTG"^^xsd:string "HUF"^^xsd:string
-                  "IDR"^^xsd:string "ILS"^^xsd:string "IMP"^^xsd:string "INR"^^xsd:string "IQD"^^xsd:string "IRR"^^xsd:string "ISK"^^xsd:string "JEP"^^xsd:string "JMD"^^xsd:string "JOD"^^xsd:string
-                  "JPY"^^xsd:string "KES"^^xsd:string "KGS"^^xsd:string "KHR"^^xsd:string "KMF"^^xsd:string "KPW"^^xsd:string "KRW"^^xsd:string "KWD"^^xsd:string "KYD"^^xsd:string "KZT"^^xsd:string
-                  "LAK"^^xsd:string "LBP"^^xsd:string "LKR"^^xsd:string "LRD"^^xsd:string "LSL"^^xsd:string "LYD"^^xsd:string "MAD"^^xsd:string "MDL"^^xsd:string "MGA"^^xsd:string "MKD"^^xsd:string
-                  "MMK"^^xsd:string "MNT"^^xsd:string "MOP"^^xsd:string "MRU"^^xsd:string "MUR"^^xsd:string "MVR"^^xsd:string "MWK"^^xsd:string "MXN"^^xsd:string "MYR"^^xsd:string "MZN"^^xsd:string
-                  "NAD"^^xsd:string "NGN"^^xsd:string "NIO"^^xsd:string "NOK"^^xsd:string "NPR"^^xsd:string "NZD"^^xsd:string "OMR"^^xsd:string "PAB"^^xsd:string "PEN"^^xsd:string "PGK"^^xsd:string
-                  "PHP"^^xsd:string "PKR"^^xsd:string "PLN"^^xsd:string "PYG"^^xsd:string "QAR"^^xsd:string "RON"^^xsd:string "RSD"^^xsd:string "RUB"^^xsd:string "RWF"^^xsd:string "SAR"^^xsd:string
-                  "SBD"^^xsd:string "SCR"^^xsd:string "SDG"^^xsd:string "SEK"^^xsd:string "SGD"^^xsd:string "SHP"^^xsd:string "SLL"^^xsd:string "SOS"^^xsd:string "SPL*"^^xsd:string "SRD"^^xsd:string
-                  "STN"^^xsd:string "SVC"^^xsd:string "SYP"^^xsd:string "SZL"^^xsd:string "THB"^^xsd:string "TJS"^^xsd:string "TMT"^^xsd:string "TND"^^xsd:string	"TOP"^^xsd:string "TRY"^^xsd:string
-                  "TTD"^^xsd:string "TVD"^^xsd:string "TWD"^^xsd:string "TZS"^^xsd:string "UAH"^^xsd:string "UGX"^^xsd:string "USD"^^xsd:string "UYU"^^xsd:string "UZS"^^xsd:string "VEF"^^xsd:string
-                  "VND"^^xsd:string "VUV"^^xsd:string "WST"^^xsd:string "XAF"^^xsd:string "XCD"^^xsd:string "XDR"^^xsd:string "XOF"^^xsd:string "XPF"^^xsd:string "YER"^^xsd:string "ZAR"^^xsd:string
-                  "ZMW"^^xsd:string "ZWD"^^xsd:string);
+            sh:in (
+                "AED"^^xsd:string "AFN"^^xsd:string "ALL"^^xsd:string "AMD"^^xsd:string "ANG"^^xsd:string "AOA"^^xsd:string "ARS"^^xsd:string "AUD"^^xsd:string "AWG"^^xsd:string "AZN"^^xsd:string
+                "BAM"^^xsd:string "BBD"^^xsd:string "BDT"^^xsd:string "BGN"^^xsd:string "BHD"^^xsd:string "BIF"^^xsd:string "BMD"^^xsd:string "BND"^^xsd:string "BOB"^^xsd:string "BRL"^^xsd:string
+                "BSD"^^xsd:string "BTN"^^xsd:string "BWP"^^xsd:string "BYN"^^xsd:string "BZD"^^xsd:string "CAD"^^xsd:string "CDF"^^xsd:string "CHF"^^xsd:string "CLP"^^xsd:string "CNY"^^xsd:string
+                "COP"^^xsd:string "CRC"^^xsd:string "CUC"^^xsd:string "CUP"^^xsd:string "CVE"^^xsd:string "CZK"^^xsd:string "DJF"^^xsd:string "DKK"^^xsd:string "DOP"^^xsd:string "DZD"^^xsd:string
+                "EGP"^^xsd:string "ERN"^^xsd:string "ETB"^^xsd:string "EUR"^^xsd:string "FJD"^^xsd:string "FKP"^^xsd:string "GBP"^^xsd:string "GEL"^^xsd:string "GGP"^^xsd:string "GHS"^^xsd:string
+                "GIP"^^xsd:string "GMD"^^xsd:string "GNF"^^xsd:string "GTQ"^^xsd:string "GYD"^^xsd:string "HKD"^^xsd:string "HNL"^^xsd:string "HRK"^^xsd:string "HTG"^^xsd:string "HUF"^^xsd:string
+                "IDR"^^xsd:string "ILS"^^xsd:string "IMP"^^xsd:string "INR"^^xsd:string "IQD"^^xsd:string "IRR"^^xsd:string "ISK"^^xsd:string "JEP"^^xsd:string "JMD"^^xsd:string "JOD"^^xsd:string
+                "JPY"^^xsd:string "KES"^^xsd:string "KGS"^^xsd:string "KHR"^^xsd:string "KMF"^^xsd:string "KPW"^^xsd:string "KRW"^^xsd:string "KWD"^^xsd:string "KYD"^^xsd:string "KZT"^^xsd:string
+                "LAK"^^xsd:string "LBP"^^xsd:string "LKR"^^xsd:string "LRD"^^xsd:string "LSL"^^xsd:string "LYD"^^xsd:string "MAD"^^xsd:string "MDL"^^xsd:string "MGA"^^xsd:string "MKD"^^xsd:string
+                "MMK"^^xsd:string "MNT"^^xsd:string "MOP"^^xsd:string "MRU"^^xsd:string "MUR"^^xsd:string "MVR"^^xsd:string "MWK"^^xsd:string "MXN"^^xsd:string "MYR"^^xsd:string "MZN"^^xsd:string
+                "NAD"^^xsd:string "NGN"^^xsd:string "NIO"^^xsd:string "NOK"^^xsd:string "NPR"^^xsd:string "NZD"^^xsd:string "OMR"^^xsd:string "PAB"^^xsd:string "PEN"^^xsd:string "PGK"^^xsd:string
+                "PHP"^^xsd:string "PKR"^^xsd:string "PLN"^^xsd:string "PYG"^^xsd:string "QAR"^^xsd:string "RON"^^xsd:string "RSD"^^xsd:string "RUB"^^xsd:string "RWF"^^xsd:string "SAR"^^xsd:string
+                "SBD"^^xsd:string "SCR"^^xsd:string "SDG"^^xsd:string "SEK"^^xsd:string "SGD"^^xsd:string "SHP"^^xsd:string "SLL"^^xsd:string "SOS"^^xsd:string "SPL*"^^xsd:string "SRD"^^xsd:string
+                "STN"^^xsd:string "SVC"^^xsd:string "SYP"^^xsd:string "SZL"^^xsd:string "THB"^^xsd:string "TJS"^^xsd:string "TMT"^^xsd:string "TND"^^xsd:string "TOP"^^xsd:string "TRY"^^xsd:string
+                "TTD"^^xsd:string "TVD"^^xsd:string "TWD"^^xsd:string "TZS"^^xsd:string "UAH"^^xsd:string "UGX"^^xsd:string "USD"^^xsd:string "UYU"^^xsd:string "UZS"^^xsd:string "VEF"^^xsd:string
+                "VND"^^xsd:string "VUV"^^xsd:string "WST"^^xsd:string "XAF"^^xsd:string "XCD"^^xsd:string "XDR"^^xsd:string "XOF"^^xsd:string "XPF"^^xsd:string "YER"^^xsd:string "ZAR"^^xsd:string
+                "ZMW"^^xsd:string "ZWD"^^xsd:string
+            );
         ];
         sh:property [
             sh:path terms:description;
@@ -645,16 +678,27 @@ ex:DMPShape
         sh:description "Language of the DMP expressed using ISO 639-3.";
         sh:minCount 1;
         sh:maxCount 1;
-        sh:in ("aar"^^xsd:string "abk"^^xsd:string "afr"^^xsd:string "aka"^^xsd:string "amh"^^xsd:string "ara"^^xsd:string "arg"^^xsd:string "asm"^^xsd:string "ava"^^xsd:string "ave"^^xsd:string "aym"^^xsd:string "aze"^^xsd:string "bak"^^xsd:string "bam"^^xsd:string "bel"^^xsd:string "ben"^^xsd:string "bih"^^xsd:string "bis"^^xsd:string "bod"^^xsd:string "bos"^^xsd:string
-            "bre"^^xsd:string "bul"^^xsd:string "cat"^^xsd:string "ces"^^xsd:string "cha"^^xsd:string "che"^^xsd:string "chu"^^xsd:string "chv"^^xsd:string "cor"^^xsd:string "cos"^^xsd:string "cre"^^xsd:string "cym"^^xsd:string "dan"^^xsd:string "deu"^^xsd:string "div"^^xsd:string "dzo"^^xsd:string "ell"^^xsd:string "eng"^^xsd:string "epo"^^xsd:string "est"^^xsd:string
-            "eus"^^xsd:string "ewe"^^xsd:string "fao"^^xsd:string "fas"^^xsd:string "fij"^^xsd:string "fin"^^xsd:string "fra"^^xsd:string "fry"^^xsd:string "ful"^^xsd:string "gla"^^xsd:string "gle"^^xsd:string "glg"^^xsd:string "glv"^^xsd:string "grn"^^xsd:string "guj"^^xsd:string "hat"^^xsd:string "hau"^^xsd:string "hbs"^^xsd:string "heb"^^xsd:string "her"^^xsd:string
-            "hin"^^xsd:string "hmo"^^xsd:string "hrv"^^xsd:string "hun"^^xsd:string "hye"^^xsd:string "ibo"^^xsd:string "ido"^^xsd:string "iii"^^xsd:string "iku"^^xsd:string "ile"^^xsd:string "ina"^^xsd:string "ind"^^xsd:string "ipk"^^xsd:string "isl"^^xsd:string "ita"^^xsd:string "jav"^^xsd:string "jpn"^^xsd:string "kal"^^xsd:string "kan"^^xsd:string "kas"^^xsd:string
-            "kat"^^xsd:string "kau"^^xsd:string "kaz"^^xsd:string "khm"^^xsd:string "kik"^^xsd:string "kin"^^xsd:string "kir"^^xsd:string "kom"^^xsd:string "kon"^^xsd:string "kor"^^xsd:string "kua"^^xsd:string "kur"^^xsd:string "lao"^^xsd:string "lat"^^xsd:string "lav"^^xsd:string "lim"^^xsd:string "lin"^^xsd:string "lit"^^xsd:string "ltz"^^xsd:string "lub"^^xsd:string
-            "lug"^^xsd:string "mah"^^xsd:string "mal"^^xsd:string "mar"^^xsd:string "mkd"^^xsd:string "mlg"^^xsd:string "mlt"^^xsd:string "mon"^^xsd:string "mri"^^xsd:string "msa"^^xsd:string "mya"^^xsd:string "nau"^^xsd:string "nav"^^xsd:string "nbl"^^xsd:string "nde"^^xsd:string "ndo"^^xsd:string "nep"^^xsd:string "nld"^^xsd:string "nno"^^xsd:string "nob"^^xsd:string
-            "nor"^^xsd:string "nya"^^xsd:string "oci"^^xsd:string "oji"^^xsd:string "ori"^^xsd:string "orm"^^xsd:string "oss"^^xsd:string "pan"^^xsd:string "pli"^^xsd:string "pol"^^xsd:string "por"^^xsd:string "pus"^^xsd:string "que"^^xsd:string "roh"^^xsd:string "ron"^^xsd:string "run"^^xsd:string "rus"^^xsd:string "sag"^^xsd:string "san"^^xsd:string "sin"^^xsd:string
-            "slk"^^xsd:string "slv"^^xsd:string "sme"^^xsd:string "smo"^^xsd:string "sna"^^xsd:string "snd"^^xsd:string "som"^^xsd:string "sot"^^xsd:string "spa"^^xsd:string "sqi"^^xsd:string "srd"^^xsd:string "srp"^^xsd:string "ssw"^^xsd:string "sun"^^xsd:string "swa"^^xsd:string "swe"^^xsd:string "tah"^^xsd:string "tam"^^xsd:string "tat"^^xsd:string "tel"^^xsd:string
-            "tgk"^^xsd:string "tgl"^^xsd:string "tha"^^xsd:string "tir"^^xsd:string "ton"^^xsd:string "tsn"^^xsd:string "tso"^^xsd:string "tuk"^^xsd:string "tur"^^xsd:string "twi"^^xsd:string "uig"^^xsd:string "ukr"^^xsd:string "urd"^^xsd:string "uzb"^^xsd:string "ven"^^xsd:string "vie"^^xsd:string "vol"^^xsd:string "wln"^^xsd:string "wol"^^xsd:string "xho"^^xsd:string
-            "yid"^^xsd:string "yor"^^xsd:string "zha"^^xsd:string "zho"^^xsd:string "zul"^^xsd:string);
+        sh:in (
+            "aar"^^xsd:string "abk"^^xsd:string "afr"^^xsd:string "aka"^^xsd:string "amh"^^xsd:string "ara"^^xsd:string "arg"^^xsd:string "asm"^^xsd:string "ava"^^xsd:string "ave"^^xsd:string
+            "aym"^^xsd:string "aze"^^xsd:string "bak"^^xsd:string "bam"^^xsd:string "bel"^^xsd:string "ben"^^xsd:string "bih"^^xsd:string "bis"^^xsd:string "bod"^^xsd:string "bos"^^xsd:string
+            "bre"^^xsd:string "bul"^^xsd:string "cat"^^xsd:string "ces"^^xsd:string "cha"^^xsd:string "che"^^xsd:string "chu"^^xsd:string "chv"^^xsd:string "cor"^^xsd:string "cos"^^xsd:string
+            "cre"^^xsd:string "cym"^^xsd:string "dan"^^xsd:string "deu"^^xsd:string "div"^^xsd:string "dzo"^^xsd:string "ell"^^xsd:string "eng"^^xsd:string "epo"^^xsd:string "est"^^xsd:string
+            "eus"^^xsd:string "ewe"^^xsd:string "fao"^^xsd:string "fas"^^xsd:string "fij"^^xsd:string "fin"^^xsd:string "fra"^^xsd:string "fry"^^xsd:string "ful"^^xsd:string "gla"^^xsd:string
+            "gle"^^xsd:string "glg"^^xsd:string "glv"^^xsd:string "grn"^^xsd:string "guj"^^xsd:string "hat"^^xsd:string "hau"^^xsd:string "hbs"^^xsd:string "heb"^^xsd:string "her"^^xsd:string
+            "hin"^^xsd:string "hmo"^^xsd:string "hrv"^^xsd:string "hun"^^xsd:string "hye"^^xsd:string "ibo"^^xsd:string "ido"^^xsd:string "iii"^^xsd:string "iku"^^xsd:string "ile"^^xsd:string
+            "ina"^^xsd:string "ind"^^xsd:string "ipk"^^xsd:string "isl"^^xsd:string "ita"^^xsd:string "jav"^^xsd:string "jpn"^^xsd:string "kal"^^xsd:string "kan"^^xsd:string "kas"^^xsd:string
+            "kat"^^xsd:string "kau"^^xsd:string "kaz"^^xsd:string "khm"^^xsd:string "kik"^^xsd:string "kin"^^xsd:string "kir"^^xsd:string "kom"^^xsd:string "kon"^^xsd:string "kor"^^xsd:string
+            "kua"^^xsd:string "kur"^^xsd:string "lao"^^xsd:string "lat"^^xsd:string "lav"^^xsd:string "lim"^^xsd:string "lin"^^xsd:string "lit"^^xsd:string "ltz"^^xsd:string "lub"^^xsd:string
+            "lug"^^xsd:string "mah"^^xsd:string "mal"^^xsd:string "mar"^^xsd:string "mkd"^^xsd:string "mlg"^^xsd:string "mlt"^^xsd:string "mon"^^xsd:string "mri"^^xsd:string "msa"^^xsd:string
+            "mya"^^xsd:string "nau"^^xsd:string "nav"^^xsd:string "nbl"^^xsd:string "nde"^^xsd:string "ndo"^^xsd:string "nep"^^xsd:string "nld"^^xsd:string "nno"^^xsd:string "nob"^^xsd:string
+            "nor"^^xsd:string "nya"^^xsd:string "oci"^^xsd:string "oji"^^xsd:string "ori"^^xsd:string "orm"^^xsd:string "oss"^^xsd:string "pan"^^xsd:string "pli"^^xsd:string "pol"^^xsd:string
+            "por"^^xsd:string "pus"^^xsd:string "que"^^xsd:string "roh"^^xsd:string "ron"^^xsd:string "run"^^xsd:string "rus"^^xsd:string "sag"^^xsd:string "san"^^xsd:string "sin"^^xsd:string
+            "slk"^^xsd:string "slv"^^xsd:string "sme"^^xsd:string "smo"^^xsd:string "sna"^^xsd:string "snd"^^xsd:string "som"^^xsd:string "sot"^^xsd:string "spa"^^xsd:string "sqi"^^xsd:string
+            "srd"^^xsd:string "srp"^^xsd:string "ssw"^^xsd:string "sun"^^xsd:string "swa"^^xsd:string "swe"^^xsd:string "tah"^^xsd:string "tam"^^xsd:string "tat"^^xsd:string "tel"^^xsd:string
+            "tgk"^^xsd:string "tgl"^^xsd:string "tha"^^xsd:string "tir"^^xsd:string "ton"^^xsd:string "tsn"^^xsd:string "tso"^^xsd:string "tuk"^^xsd:string "tur"^^xsd:string "twi"^^xsd:string
+            "uig"^^xsd:string "ukr"^^xsd:string "urd"^^xsd:string "uzb"^^xsd:string "ven"^^xsd:string "vie"^^xsd:string "vol"^^xsd:string "wln"^^xsd:string "wol"^^xsd:string "xho"^^xsd:string
+            "yid"^^xsd:string "yor"^^xsd:string "zha"^^xsd:string "zho"^^xsd:string "zul"^^xsd:string
+        );
     ];
     sh:property [
         sh:path terms:modified;
