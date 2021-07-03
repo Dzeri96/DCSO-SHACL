@@ -1,0 +1,190 @@
+@prefix :      <https://w3id.org/madmp/terms#> .
+@prefix schema: <http://schema.org/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix ns:    <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix dcam:  <http://purl.org/dc/dcam/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcsx:  <https://w3id.org/dcso/ns/extension#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ex:    <https://w3id.org/dcso/id/example/> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix wot:   <http://xmlns.com/wot/0.1/> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix madmp: <https://w3id.org/madmp/terms#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ rdf:type                    madmp:DMP ;
+  terms:created               "2021-04-17T20:17:56.725Z" ;
+  terms:description           "This is the data management plan for our research project about analyzing the correlation between GDP per capita and fertility rate(births per Woman)." ;
+  terms:modified              "2021-04-17T19:57:57.584Z" ;
+  terms:title                 "DMP: Correlation of GDP and fertility rate" ;
+  madmp:contact               [ foaf:mbox         "e1627772@student.tuwien.ac.at" ;
+                                foaf:name         "Jovan Petrovic" ;
+                                madmp:contact_id  [ terms:identifier       "https://orcid.org/0000-0002-5605-4003" ;
+                                                    madmp:identifier_type  "orcid"
+                                                  ]
+                              ] ;
+  madmp:contributor           [ foaf:mbox             "e1627772@student.tuwien.ac.at" ;
+                                foaf:name             "Jovan Petrovic" ;
+                                madmp:contributor_id  [ terms:identifier       "https://orcid.org/0000-0002-5605-4003" ;
+                                                        madmp:identifier_type  "orcid"
+                                                      ] ;
+                                madmp:role            ( "Project creator" )
+                              ] ;
+  madmp:cost                  [ terms:description    "There are no costs present for any aspect of our research, because all tools and data management processes are free" ;
+                                terms:title          "Cost of performing the research" ;
+                                madmp:currency_code  "EUR" ;
+                                madmp:value          0
+                              ] ;
+  madmp:dataset               [ terms:description           "This dataset contains GDP per capita data for all countries for the period of 1960-2019." ;
+                                terms:issued                "2021-04-17" ;
+                                terms:title                 "GDP per capita (current US$)" ;
+                                dcat:keyword                "Capita" , "GDP" ;
+                                madmp:dataset_id            [ terms:identifier       "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD" ;
+                                                              madmp:identifier_type  "url"
+                                                            ] ;
+                                madmp:distribution          [ terms:description  "This dataset contains GDP per capita data for all countries for the period of 1960-2019." ;
+                                                              terms:format       "text/csv" ;
+                                                              terms:title        "GDP per capita (current US$)" ;
+                                                              dcat:accessUrl     "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD" ;
+                                                              dcat:byteSize      184000 ;
+                                                              dcat:downloadURL   "https://api.worldbank.org/v2/en/indicator/NY.GDP.PCAP.CD?downloadformat=csv" ;
+                                                              madmp:data_access  "open" ;
+                                                              madmp:hasHost      [ terms:title  "The World Bank" ;
+                                                                                   madmp:url    "https://data.worldbank.org"
+                                                                                 ] ;
+                                                              madmp:license      [ madmp:license_ref  "https://creativecommons.org/licenses/by/4.0/legalcode" ;
+                                                                                   madmp:start_date   "2021-04-17"
+                                                                                 ]
+                                                            ] ;
+                                madmp:identifier_type       "dataset" ;
+                                madmp:language              "eng" ;
+                                madmp:metadata              [ madmp:language              "eng" ;
+                                                              madmp:metadata_standard_id  [ terms:identifier       "https://databank.worldbank.org/reports.aspx?source=2&type=metadata&series=NY.GDP.PCAP.CD" ;
+                                                                                            madmp:identifier_type  "url"
+                                                                                          ]
+                                                            ] ;
+                                madmp:personal_data         "no" ;
+                                madmp:security_and_privacy  [ terms:description  "Available for public use under the terms of Creative Commons Attribution 4.0 International license" ;
+                                                              terms:title        "Data access"
+                                                            ] ;
+                                madmp:sensitive_data        "no"
+                              ] ;
+  madmp:dataset               [ terms:description           "This dataset contains GDP per capita and fertility rate of all countries that have that information for the year 2016. The data from this file will be used later for the graphical representation of our experiment" ;
+                                terms:issued                "2021-04-17" ;
+                                terms:title                 "Correlation of GDP and fertility rate in 2016" ;
+                                dcat:keyword                "Correlation" , "2016" , "Fertility" , "GDP" ;
+                                madmp:dataset_id            [ terms:identifier       "https://doi.org/10.5281/zenodo.4698406" ;
+                                                              madmp:identifier_type  "doi"
+                                                            ] ;
+                                madmp:distribution          [ terms:description  "This is the source code of the project that contains all relevant files and folders of the project implementation" ;
+                                                              terms:format       "application/zip" ;
+                                                              terms:title        "GDP_Fertility_Correlation" ;
+                                                              dcat:accessUrl     "https://github.com/jpetrovi/GDP_Fertility_Correlation" ;
+                                                              dcat:byteSize      737630 ;
+                                                              dcat:downloadURL   "https://github.com/jpetrovi/GDP_Fertility_Correlation/archive/refs/heads/master.zip" ;
+                                                              madmp:data_access  "open" ;
+                                                              madmp:hasHost      [ terms:title               "GitHub" ;
+                                                                                   madmp:pid_system          "doi" ;
+                                                                                   madmp:support_versioning  "yes" ;
+                                                                                   madmp:url                 "https://github.com"
+                                                                                 ] ;
+                                                              madmp:license      [ madmp:license_ref  "https://creativecommons.org/licenses/by/4.0/legalcode" ;
+                                                                                   madmp:start_date   "2021-04-17"
+                                                                                 ]
+                                                            ] ;
+                                madmp:distribution          [ terms:description  "This dataset contains GDP per capita and fertility rate of all countries that have that information for the year 2016. The data from this file will be used later for the graphical representation of our experiment" ;
+                                                              terms:format       "text/csv" ;
+                                                              terms:title        "Correlation of GDP and fertility rate in 2016" ;
+                                                              dcat:accessUrl     "https://zenodo.org/record/4698406#.YHsnUy2w1ZM" ;
+                                                              dcat:byteSize      8700 ;
+                                                              dcat:downloadURL   "https://zenodo.org/record/4698406/files/gdp_fertility.csv?download=1" ;
+                                                              madmp:data_access  "open" ;
+                                                              madmp:hasHost      [ terms:title               "Zenodo" ;
+                                                                                   madmp:pid_system          "doi" ;
+                                                                                   madmp:support_versioning  "yes" ;
+                                                                                   madmp:url                 "https://zenodo.org"
+                                                                                 ] ;
+                                                              madmp:license      [ madmp:license_ref  "https://creativecommons.org/licenses/by/4.0/legalcode" ;
+                                                                                   madmp:start_date   "2021-04-17"
+                                                                                 ]
+                                                            ] ;
+                                madmp:distribution          [ terms:description  "This is a scatter plot of the merged data that clearly shows the correlation between the fertility rate and the GDP per capita for the year 2016." ;
+                                                              terms:format       "image/png" ;
+                                                              terms:title        "Scatter plot of correlation between GDP and Fertility rate" ;
+                                                              dcat:accessUrl     "https://zenodo.org/record/4698428#.YHsr0y2w1ZM" ;
+                                                              dcat:byteSize      21000 ;
+                                                              dcat:downloadURL   "https://zenodo.org/record/4698428/files/correlation.png?download=1" ;
+                                                              madmp:data_access  "open" ;
+                                                              madmp:hasHost      [ terms:title               "Zenodo" ;
+                                                                                   madmp:pid_system          "doi" ;
+                                                                                   madmp:support_versioning  "yes" ;
+                                                                                   madmp:url                 "https://zenodo.org"
+                                                                                 ] ;
+                                                              madmp:license      [ madmp:license_ref  "https://creativecommons.org/licenses/by/4.0/legalcode" ;
+                                                                                   madmp:start_date   "2021-04-17"
+                                                                                 ]
+                                                            ] ;
+                                madmp:identifier_type       "dataset" ;
+                                madmp:language              "eng" ;
+                                madmp:metadata              [ terms:description           "The Dublin Core is a set of fifteen  elements (properties) for describing resources" ;
+                                                              madmp:language              "eng" ;
+                                                              madmp:metadata_standard_id  [ terms:identifier       "http://dublincore.org" ;
+                                                                                            madmp:identifier_type  "url"
+                                                                                          ]
+                                                            ] ;
+                                madmp:personal_data         "no" ;
+                                madmp:security_and_privacy  [ terms:description  "Since our project is stored on a public GitHub repository, there are no access restrictions to the source code and created data, anyone who wants may reuse our project or if someone wants to collaborate with us, we are open for pull request that will be reviewed by our team. GitHub has already mechanisms that ensure data security and prevents unauthorized users from altering the project content" ;
+                                                              terms:title        "Data access"
+                                                            ] ;
+                                madmp:sensitive_data        "no"
+                              ] ;
+  madmp:dataset               [ terms:description           "This dataset contains fertility rate values for all countries for the period of 1960-2019" ;
+                                terms:issued                "2021-04-17" ;
+                                terms:title                 "Fertility rate, total (births per woman)" ;
+                                dcat:keyword                "Birth" , "Woman" , "Fertility" , "Rate" ;
+                                madmp:dataset_id            [ terms:identifier       "https://data.worldbank.org/indicator/SP.DYN.TFRT.IN" ;
+                                                              madmp:identifier_type  "url"
+                                                            ] ;
+                                madmp:distribution          [ terms:description  "This dataset contains fertility rate values for all countries for the period of 1960-2019" ;
+                                                              terms:format       "text/csv" ;
+                                                              terms:title        "Fertility rate, total (births per woman)" ;
+                                                              dcat:accessUrl     "https://data.worldbank.org/indicator/SP.DYN.TFRT.IN" ;
+                                                              dcat:byteSize      168000 ;
+                                                              dcat:downloadURL   "https://api.worldbank.org/v2/en/indicator/SP.DYN.TFRT.IN?downloadformat=csv" ;
+                                                              madmp:data_access  "open" ;
+                                                              madmp:license      [ madmp:license_ref  "https://creativecommons.org/licenses/by/4.0/legalcode" ;
+                                                                                   madmp:start_date   "2021-04-17"
+                                                                                 ]
+                                                            ] ;
+                                madmp:identifier_type       "dataset" ;
+                                madmp:language              "eng" ;
+                                madmp:metadata              [ madmp:language              "eng" ;
+                                                              madmp:metadata_standard_id  [ terms:identifier       "https://databank.worldbank.org/reports.aspx?source=2&type=metadata&series=SP.DYN.TFRT.IN" ;
+                                                                                            madmp:identifier_type  "url"
+                                                                                          ]
+                                                            ] ;
+                                madmp:personal_data         "no" ;
+                                madmp:security_and_privacy  [ terms:description  "Available for public use under the terms of Creative Commons Attribution 4.0 International license" ;
+                                                              terms:title        "Data access"
+                                                            ] ;
+                                madmp:sensitive_data        "no"
+                              ] ;
+  madmp:dmp_id                [ terms:identifier       "10.5281/zenodo.4698519" ;
+                                madmp:identifier_type  "doi"
+                              ] ;
+  madmp:ethical_issues_description
+          "There are no known ethical issues in our project" ;
+  madmp:ethical_issues_exist  "no" ;
+  madmp:language              "eng" ;
+  madmp:project               [ terms:title     "Correlation of GDP and fertility rate" ;
+                                dcat:endDate    "2021-04-19" ;
+                                dcat:startDate  "2021-04-14"
+                              ]
+] .

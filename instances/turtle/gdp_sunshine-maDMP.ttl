@@ -1,0 +1,348 @@
+@prefix :      <https://w3id.org/madmp/terms#> .
+@prefix schema: <http://schema.org/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix ns:    <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix dcam:  <http://purl.org/dc/dcam/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcsx:  <https://w3id.org/dcso/ns/extension#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ex:    <https://w3id.org/dcso/id/example/> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix wot:   <http://xmlns.com/wot/0.1/> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix madmp: <https://w3id.org/madmp/terms#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ rdf:type                    madmp:DMP ;
+  terms:created               "2021-04-17T22:30:49.604Z" ;
+  terms:description           "This is the machine-actionable version of the primary DMP (10.5281/zenodo.4698514), which describes the project 'Influence of sunshine on GDP per capita'" ;
+  terms:modified              "2021-04-17T22:30:49.604Z" ;
+  terms:title                 "maDMP: Influence of sunshine on GDP per capita" ;
+  madmp:contact               [ foaf:mbox         "e1527089@student.tuwien.ac.at" ;
+                                foaf:name         "Filip Darmanovic" ;
+                                madmp:contact_id  [ terms:identifier       "https://orcid.org/0000-0002-2239-1634" ;
+                                                    madmp:identifier_type  "orcid"
+                                                  ]
+                              ] ;
+  madmp:contributor           [ foaf:mbox             "e1527089@student.tuwien.ac.at" ;
+                                foaf:name             "Filip Darmanovic" ;
+                                madmp:contributor_id  [ terms:identifier       "https://orcid.org/0000-0002-2239-1634" ;
+                                                        madmp:identifier_type  "orcid"
+                                                      ] ;
+                                madmp:role            ( "Lead Researcher" "Data Steward" "Project Lead" )
+                              ] ;
+  madmp:cost                  [ terms:description    "esse Excepteur eiusmod cillum" ;
+                                terms:title          "Duis laborum" ;
+                                madmp:currency_code  "HNL" ;
+                                madmp:value          256
+                              ] ;
+  madmp:dataset               [ terms:description      "Tabular dataset containing descriptors like min, max, median of GDP per capita for many countries from the 1960s up to 2019, combined with average yearly sunshine hours extrapolated from readings in some cities of those countries." ;
+                                terms:issued           "2021-04-16" ;
+                                terms:title            "Statistical descriptors of GDP per capita combined with yearly averages of hours of sunshine per country" ;
+                                dcat:keyword           "Sunshine" , "Tabular" , "GDP per capita" ;
+                                madmp:dataset_id       [ terms:identifier       "10.5281/zenodo.4697778" ;
+                                                         madmp:identifier_type  "doi"
+                                                       ] ;
+                                madmp:distribution     [ terms:format       "text/csv" ;
+                                                         terms:title        "Statistical descriptors of GDP per capita combined with yearly averages of hours of sunshine per country" ;
+                                                         dcat:accessUrl     "https://zenodo.org/record/4697778" ;
+                                                         dcat:downloadURL   "https://zenodo.org/record/4697778/files/gdp_sunshine.csv?download=1" ;
+                                                         madmp:data_access  "open" ;
+                                                         madmp:hasHost      [ terms:description         "General-purpose data repository hosted by CERN." ;
+                                                                              terms:title               "Zenodo" ;
+                                                                              madmp:availability        "99.8" ;
+                                                                              madmp:backup_frequency    "weekly" ;
+                                                                              madmp:backup_type         "tapes" ;
+                                                                              madmp:geo_location        "CH" ;
+                                                                              madmp:pid_system          "doi" , "url" ;
+                                                                              madmp:storage_type        "Decentralized disk cluster" ;
+                                                                              madmp:support_versioning  "yes" ;
+                                                                              madmp:url                 "https://zenodo.org"
+                                                                            ] ;
+                                                         madmp:license      [ madmp:license_ref  "https://creativecommons.org/licenses/by-sa/3.0/" ;
+                                                                              madmp:start_date   "2021-04-16"
+                                                                            ]
+                                                       ] ;
+                                madmp:identifier_type  "dataset" ;
+                                madmp:language         "eng" ;
+                                madmp:metadata         [ terms:description           "JSON metadata according to the W3C's CSV on Web Recommendation, using the Dublin Core vocabulary." ;
+                                                         madmp:language              "eng" ;
+                                                         madmp:metadata_standard_id  [ terms:identifier       "https://zenodo.org/record/4697778/files/gdp_sunshine.csv?download=1" ;
+                                                                                       madmp:identifier_type  "url"
+                                                                                     ]
+                                                       ] ;
+                                madmp:personal_data    "no" ;
+                                madmp:sensitive_data   "unknown"
+                              ] ;
+  madmp:dataset               [ terms:description      "Two vectorized world maps color-coded according to average sunshine hours and mean GDP per capita." ;
+                                terms:issued           "2021-04-16" ;
+                                terms:title            "Influence of sunshine on GDP per capita - World heatmap" ;
+                                dcat:keyword           "Sunshine" , "GDP per capita" ;
+                                madmp:dataset_id       [ terms:identifier       "10.5281/zenodo.4697855" ;
+                                                         madmp:identifier_type  "doi"
+                                                       ] ;
+                                madmp:distribution     [ terms:format       "application/pdf" ;
+                                                         terms:title        "Influence of sunshine on GDP per capita - World heatmap" ;
+                                                         dcat:accessUrl     "https://zenodo.org/record/4697855" ;
+                                                         dcat:downloadURL   "https://zenodo.org/record/4697855/files/sunshine_gdp_world.pdf?download=1" ;
+                                                         madmp:data_access  "open" ;
+                                                         madmp:hasHost      [ terms:description         "General-purpose data repository hosted by CERN." ;
+                                                                              terms:title               "Zenodo" ;
+                                                                              madmp:availability        "99.8" ;
+                                                                              madmp:backup_frequency    "weekly" ;
+                                                                              madmp:backup_type         "tapes" ;
+                                                                              madmp:geo_location        "CH" ;
+                                                                              madmp:pid_system          "url" , "doi" ;
+                                                                              madmp:storage_type        "Decentralized disk cluster" ;
+                                                                              madmp:support_versioning  "yes" ;
+                                                                              madmp:url                 "https://zenodo.org"
+                                                                            ] ;
+                                                         madmp:license      [ madmp:license_ref  "https://creativecommons.org/licenses/by-sa/3.0/" ;
+                                                                              madmp:start_date   "2021-04-16"
+                                                                            ]
+                                                       ] ;
+                                madmp:identifier_type  "image" ;
+                                madmp:language         "eng" ;
+                                madmp:metadata         [ terms:description           "Dublin Core metadata in XML format." ;
+                                                         madmp:language              "eng" ;
+                                                         madmp:metadata_standard_id  [ terms:identifier       "https://zenodo.org/record/4697855/files/sunshine_gdp_world-metadata.xml?download=1" ;
+                                                                                       madmp:identifier_type  "url"
+                                                                                     ]
+                                                       ] ;
+                                madmp:personal_data    "no" ;
+                                madmp:sensitive_data   "unknown"
+                              ] ;
+  madmp:dataset               [ terms:description      "The following is a list of cities by sunshine duration. Sunshine duration is a climatological indicator, measuring duration of sunshine in given period (usually, a day or a year) for a given location on Earth, typically expressed as an averaged value over several years. It is a general indicator of cloudiness of a location, and thus differs from insolation, which measures the total energy delivered by sunlight over a given period." ;
+                                terms:title            "List of cities by sunshine duration" ;
+                                madmp:dataset_id       [ terms:identifier       "https://data.world/makeovermonday/2019w44" ;
+                                                         madmp:identifier_type  "url"
+                                                       ] ;
+                                madmp:distribution     [ terms:description  "List of cities by sunshine duration, compiled from weather reports all accross the world" ;
+                                                         terms:format       "text/html" ;
+                                                         terms:title        "List of cities by sunshine duration" ;
+                                                         dcat:accessUrl     "https://en.m.wikipedia.org/wiki/List_of_cities_by_sunshine_duration" ;
+                                                         dcat:byteSize      482085 ;
+                                                         dcat:downloadURL   "https://en.m.wikipedia.org/wiki/List_of_cities_by_sunshine_duration" ;
+                                                         madmp:data_access  "open" ;
+                                                         madmp:hasHost      [ terms:description         "Community and commercial dataset and metadata repository with many features. Hosted on AWS" ;
+                                                                              terms:title               "Wikipedia" ;
+                                                                              madmp:geo_location        "US" ;
+                                                                              madmp:storage_type        "Object storage (Swift)" ;
+                                                                              madmp:support_versioning  "yes" ;
+                                                                              madmp:url                 "https://wikipedia.org"
+                                                                            ] ;
+                                                         madmp:license      [ madmp:license_ref  "https://creativecommons.org/licenses/by-sa/3.0/" ;
+                                                                              madmp:start_date   "2019-10-27"
+                                                                            ]
+                                                       ] ;
+                                madmp:distribution     [ terms:description  "World Cities Ranked by Annual Average Sunshine Hours, exported from wikipedia." ;
+                                                         terms:format       "application/vnd.ms-excel" ;
+                                                         terms:title        "2019/W44: World Cities Ranked by Annual Sunshine Hours" ;
+                                                         dcat:accessUrl     "https://data.world/makeovermonday/2019w44" ;
+                                                         dcat:byteSize      44304 ;
+                                                         dcat:downloadURL   "https://query.data.world/s/luog37hqnqmtktu5s7ntjvowwbp34r" ;
+                                                         madmp:data_access  "open" ;
+                                                         madmp:hasHost      [ terms:description         "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation." ;
+                                                                              terms:title               "data.world" ;
+                                                                              madmp:backup_type         "AWS" ;
+                                                                              madmp:geo_location        "US" ;
+                                                                              madmp:support_versioning  "yes" ;
+                                                                              madmp:url                 "http://data.world"
+                                                                            ] ;
+                                                         madmp:license      [ madmp:license_ref  "https://creativecommons.org/licenses/by-sa/3.0/" ;
+                                                                              madmp:start_date   "2019-10-27"
+                                                                            ]
+                                                       ] ;
+                                madmp:identifier_type  "dataset" ;
+                                madmp:language         "eng" ;
+                                madmp:personal_data    "no" ;
+                                madmp:sensitive_data   "no"
+                              ] ;
+  madmp:dataset               [ terms:description      "World Bank national accounts data, and OECD National Accounts data files regarding GDP per capita." ;
+                                terms:issued           "2020-01-01" ;
+                                terms:title            "GDP per capita (current US$)" ;
+                                dcat:keyword           "GDP" , "capita" ;
+                                madmp:dataset_id       [ terms:identifier       "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD" ;
+                                                         madmp:identifier_type  "url"
+                                                       ] ;
+                                madmp:distribution     [ terms:format       "application/vnd.ms-excel" , "text/xml" , "text/csv" ;
+                                                         terms:title        "GDP per capita (current US$)" ;
+                                                         dcat:accessUrl     "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD" ;
+                                                         dcat:downloadURL   "https://api.worldbank.org/v2/en/indicator/NY.GDP.PCAP.CD?downloadformat=csv" ;
+                                                         madmp:data_access  "open" ;
+                                                         madmp:hasHost      [ terms:description         "Global organization with more than 170 member countries dealing with development." ;
+                                                                              terms:title               "World Bank Data" ;
+                                                                              madmp:support_versioning  "unknown" ;
+                                                                              madmp:url                 "https://data.worldbank.org"
+                                                                            ] ;
+                                                         madmp:license      [ madmp:license_ref  "https://datacatalog.worldbank.org/public-licenses#cc-by" ;
+                                                                              madmp:start_date   "2021-04-18"
+                                                                            ]
+                                                       ] ;
+                                madmp:identifier_type  "dataset" ;
+                                madmp:language         "eng" ;
+                                madmp:metadata         [ terms:description           "Provides metadata on the included countires and general data collection methods." ;
+                                                         madmp:language              "eng" ;
+                                                         madmp:metadata_standard_id  [ terms:identifier       "https://databank.worldbank.org/reports.aspx?source=2&type=metadata&series=NY.GDP.PCAP.CD" ;
+                                                                                       madmp:identifier_type  "url"
+                                                                                     ]
+                                                       ] ;
+                                madmp:personal_data    "no" ;
+                                madmp:sensitive_data   "no"
+                              ] ;
+  madmp:dataset               [ terms:description         "The actual source code of the project, with or without the entire project directory including the input and output data, depending on the distribution." ;
+                                terms:issued              "2021-04-17" ;
+                                terms:title               "Influence of sunshine on GDP per capita" ;
+                                dcat:keyword              "Jupyter" , "GDP per capita" , "Correlation" , "Sunshine" ;
+                                madmp:dataset_id          [ terms:identifier       "10.5281/zenodo.4698564" ;
+                                                            madmp:identifier_type  "doi"
+                                                          ] ;
+                                madmp:distribution        [ terms:format       "application/x-ipynb+json" , "application/zip" ;
+                                                            terms:title        "Influence of sunshine on GDP per capita" ;
+                                                            dcat:accessUrl     "https://zenodo.org/record/4698564" ;
+                                                            dcat:downloadURL   "https://zenodo.org/record/4698564/files/Dzeri96/Influence-of-sunshine-on-GDP-per-capita-v1.0.zip?download=1" ;
+                                                            madmp:data_access  "open" ;
+                                                            madmp:hasHost      [ terms:description         "General-purpose data repository hosted by CERN." ;
+                                                                                 terms:title               "Zenodo" ;
+                                                                                 madmp:availability        "99.8" ;
+                                                                                 madmp:backup_frequency    "weekly" ;
+                                                                                 madmp:backup_type         "tapes" ;
+                                                                                 madmp:geo_location        "CH" ;
+                                                                                 madmp:pid_system          "doi" , "url" ;
+                                                                                 madmp:storage_type        "Decentralized disk cluster" ;
+                                                                                 madmp:support_versioning  "yes" ;
+                                                                                 madmp:url                 "https://zenodo.org"
+                                                                               ] ;
+                                                            madmp:license      [ madmp:license_ref  "https://github.com/Dzeri96/Influence-of-sunshine-on-GDP-per-capita/blob/master/LICENSE" ;
+                                                                                 madmp:start_date   "2021-04-17"
+                                                                               ]
+                                                          ] ;
+                                madmp:distribution        [ terms:description  "The 'source-of-truth' repository from which releases are created." ;
+                                                            terms:format       "application/x-ipynb+json" , "application/zip" ;
+                                                            terms:title        "Influence-of-sunshine-on-GDP-per-capita" ;
+                                                            dcat:accessUrl     "https://github.com/Dzeri96/Influence-of-sunshine-on-GDP-per-capita/tree/v1.0" ;
+                                                            dcat:downloadURL   "https://github.com/Dzeri96/Influence-of-sunshine-on-GDP-per-capita/archive/refs/tags/v1.0.zip" ;
+                                                            madmp:data_access  "open" ;
+                                                            madmp:hasHost      [ terms:description         "World's largest code repository." ;
+                                                                                 terms:title               "GitHub" ;
+                                                                                 madmp:backup_type         "tape in an ice vault" ;
+                                                                                 madmp:pid_system          "url" ;
+                                                                                 madmp:support_versioning  "yes" ;
+                                                                                 madmp:url                 "https://github.com"
+                                                                               ] ;
+                                                            madmp:license      [ madmp:license_ref  "https://github.com/Dzeri96/Influence-of-sunshine-on-GDP-per-capita/blob/master/LICENSE" ;
+                                                                                 madmp:start_date   "2021-04-17"
+                                                                               ]
+                                                          ] ;
+                                madmp:identifier_type     "software" ;
+                                madmp:language            "eng" ;
+                                madmp:metadata            [ terms:description           "Dublin Core metadata in XML format." ;
+                                                            madmp:language              "eng" ;
+                                                            madmp:metadata_standard_id  [ terms:identifier       "https://github.com/Dzeri96/Influence-of-sunshine-on-GDP-per-capita/blob/v1.0/documentation/metadata.xml" ;
+                                                                                          madmp:identifier_type  "url"
+                                                                                        ]
+                                                          ] ;
+                                madmp:personal_data       "no" ;
+                                madmp:sensitive_data      "unknown" ;
+                                madmp:technical_resource  [ terms:description  "Python package manager." ;
+                                                            foaf:name          "pip"
+                                                          ] ;
+                                madmp:technical_resource  [ foaf:name  "python3" ]
+                              ] ;
+  madmp:dataset               [ terms:description     "Natural Earth is a public domain map dataset available at 1:10m, 1:50m, and 1:110 million scales. Featuring tightly integrated vector and raster data" ;
+                                terms:issued          "2018-05-23" ;
+                                terms:title           "Admin 0 – Countries" ;
+                                dcat:keyword          "Map" , "Countries" , "World" , "Vector" , "GIS" ;
+                                madmp:dataset_id      [ terms:identifier       "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-countries/" ;
+                                                        madmp:identifier_type  "url"
+                                                      ] ;
+                                madmp:distribution    [ terms:format       "appliaction/zip" ;
+                                                        terms:title        "natural-earth-vector" ;
+                                                        dcat:accessUrl     "https://github.com/nvkelso/natural-earth-vector" ;
+                                                        dcat:downloadURL   "https://github.com/nvkelso/natural-earth-vector/archive/refs/tags/v4.1.0.zip" ;
+                                                        madmp:data_access  "open" ;
+                                                        madmp:hasHost      [ terms:description         "World's largest code repository." ;
+                                                                             terms:title               "GitHub" ;
+                                                                             madmp:backup_type         "tape in an ice vault" ;
+                                                                             madmp:pid_system          "url" ;
+                                                                             madmp:support_versioning  "yes" ;
+                                                                             madmp:url                 "https://github.com"
+                                                                           ] ;
+                                                        madmp:license      [ madmp:license_ref  "https://github.com/nvkelso/natural-earth-vector/blob/master/LICENSE.md" ;
+                                                                             madmp:start_date   "2015-06-07"
+                                                                           ]
+                                                      ] ;
+                                madmp:distribution    [ terms:format       "appliaction/zip" ;
+                                                        terms:title        "Admin 0 - Countries" ;
+                                                        dcat:accessUrl     "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-countries/" ;
+                                                        dcat:downloadURL   "https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip" ;
+                                                        madmp:data_access  "open" ;
+                                                        madmp:hasHost      [ terms:description         "Landing page for the Natural Earth dataset." ;
+                                                                             terms:title               "Natural Earth" ;
+                                                                             madmp:pid_system          "url" ;
+                                                                             madmp:support_versioning  "unknown" ;
+                                                                             madmp:url                 "https://www.naturalearthdata.com/"
+                                                                           ] ;
+                                                        madmp:license      [ madmp:license_ref  "https://github.com/nvkelso/natural-earth-vector/blob/master/LICENSE.md" ;
+                                                                             madmp:start_date   "2015-06-07"
+                                                                           ]
+                                                      ] ;
+                                madmp:language        "eng" ;
+                                madmp:personal_data   "no" ;
+                                madmp:sensitive_data  "unknown"
+                              ] ;
+  madmp:dataset               [ terms:description      "A vectorized visualization of Pearson correlation coefficients accompanying the tabular data artifact of the experiment in the title." ;
+                                terms:issued           "2021-04-16" ;
+                                terms:title            "Influence of sunshine on GDP per capita - Column correlation plot" ;
+                                dcat:keyword           "Sunshine" , "Correlation" , "GDP per capita" ;
+                                madmp:dataset_id       [ terms:identifier       "10.5281/zenodo.4697850" ;
+                                                         madmp:identifier_type  "doi"
+                                                       ] ;
+                                madmp:distribution     [ terms:format       "application/pdf" ;
+                                                         terms:title        "Influence of sunshine on GDP per capita - Column correlation plot" ;
+                                                         dcat:accessUrl     "https://zenodo.org/record/4697850" ;
+                                                         dcat:downloadURL   "https://zenodo.org/record/4697850/files/sunshine_gdp_corr.pdf?download=1" ;
+                                                         madmp:data_access  "open" ;
+                                                         madmp:hasHost      [ terms:description         "General-purpose data repository hosted by CERN." ;
+                                                                              terms:title               "Zenodo" ;
+                                                                              madmp:availability        "99.8" ;
+                                                                              madmp:backup_frequency    "weekly" ;
+                                                                              madmp:backup_type         "tapes" ;
+                                                                              madmp:geo_location        "CH" ;
+                                                                              madmp:pid_system          "doi" , "url" ;
+                                                                              madmp:storage_type        "Decentralized disk cluster" ;
+                                                                              madmp:support_versioning  "yes" ;
+                                                                              madmp:url                 "https://zenodo.org"
+                                                                            ] ;
+                                                         madmp:license      [ madmp:license_ref  "https://creativecommons.org/licenses/by-sa/3.0/" ;
+                                                                              madmp:start_date   "2021-04-16"
+                                                                            ]
+                                                       ] ;
+                                madmp:identifier_type  "image" ;
+                                madmp:language         "eng" ;
+                                madmp:metadata         [ terms:description           "Dublin Core metadata in XML format." ;
+                                                         madmp:language              "eng" ;
+                                                         madmp:metadata_standard_id  [ terms:identifier       "https://zenodo.org/record/4697850/files/sunshine_gdp_corr-metadata.xml?download=1" ;
+                                                                                       madmp:identifier_type  "url"
+                                                                                     ]
+                                                       ] ;
+                                madmp:personal_data    "no" ;
+                                madmp:sensitive_data   "no"
+                              ] ;
+  madmp:dmp_id                [ terms:identifier       "10.5281/zenodo.4698936" ;
+                                madmp:identifier_type  "doi"
+                              ] ;
+  madmp:ethical_issues_exist  "no" ;
+  madmp:language              "eng" ;
+  madmp:project               [ terms:description  "This project, which revolves around a central jupyter notebook explores the hypothesis that dreary weather discourages people from going outside and in turn makes them more productive. Likewise, that beautiful weather distracts people from their work, which should reflect in a country's GDP per capita." ;
+                                terms:title        "Influence of sunshine on GDP per capita" ;
+                                dcat:endDate       "2021-04-19" ;
+                                dcat:startDate     "2021-04-08"
+                              ]
+] .
