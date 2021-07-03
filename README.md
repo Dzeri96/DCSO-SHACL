@@ -55,7 +55,7 @@ The folder `instances/turtle` contains 11 correct instances generated with [dcso
 - Invalid `foaf:mbox` in `m̀admp:contact` - line 27
 - Non-unique values in `madmp:role` - line 38
 - Negative `madmp:value` in `madmp:cost` -line 43
-- Ivalid `terms:issued` in `madmp:dataset` - line 46
+- Invalid `terms:issued` in `madmp:dataset` - line 46
 - Invalid url in `madmp:license_ref` - line 68
 - Invalid `madmp:language` in `madmp:metadata` - line 75
 - Too many `terms_identifier` in `madmp:dmp_id` - line 338
