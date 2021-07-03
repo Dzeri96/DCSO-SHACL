@@ -1,5 +1,7 @@
 # DCSO maDMP constraints implementation in SHACL
 
+[![DOI](https://zenodo.org/badge/381461890.svg)](https://zenodo.org/badge/latestdoi/381461890)
+
 This is a SHACL version of the [JSON Schema v1.1](https://github.com/RDA-DMP-Common/RDA-DMP-Common-Standard/tree/master/examples/JSON/JSON-schema/1.1). For differences and implementation details take a look at the following two sections.
 
 ## Decisions we made when modelling
